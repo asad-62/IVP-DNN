@@ -24,8 +24,8 @@ Many image classificaton algorithms, both classical and machine-learning-based, 
 Selected three CNN-Approaches for image classification based on state-of-the-art benchmarks for CNNs trained on ImageNet database (TOP 1 and TOP 5 accuracy | different amount of training pictures)
   * NASNetLarge https://arxiv.org/abs/1707.07012
   * EfficientNetB7 https://arxiv.org/abs/1905.11946
-  * (No fitting implementation) FixEfficientNet-L2 https://github.com/facebookresearch/FixRes
-  * **DenseNet201 https://arxiv.org/abs/1608.06993**  
+  * (Not choosen due to lack of fitting implementation) FixEfficientNet-L2 https://github.com/facebookresearch/FixRes
+  * DenseNet201 https://arxiv.org/abs/1608.06993  
 * Further reading:
   * https://paperswithcode.com/task/image-classification
   * https://towardsdatascience.com/state-of-the-art-image-classification-algorithm-fixefficientnet-l2-98b93deeb04c 
@@ -37,10 +37,11 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
  
 ### Working with high resolution images 
 
-**DUE TO LIMITED PROCESSING POWER: UNTIL NOW ONLY USED IMAGES WITH SHRINKED RESOLUTION** </br>
+~~**DUE TO LIMITED PROCESSING POWER: UNTIL NOW ONLY USED IMAGES WITH SHRINKED RESOLUTION** </br>
 https://cloud.tu-ilmenau.de/s/AKo8jqwEXLFs7Q3 </br>
 Used the Image Resizer application with following options: </br>
-custom width x height (450 x 300) | rotate and flip option: keep original | output setting **Retain the original format**
+custom width x height (450 x 300) | rotate and flip option: keep original | output setting **Retain the original format**~~<br>
+This isn't the case anymore: all results from 29.12.2020 are based on the full resolution images
 
 </br> **Identified possible approaches for working with high resolution images** 
 * **Brute force approach**: Resizing to required dimension (Open CV) within the preprocessing for the specific cnn
@@ -55,14 +56,14 @@ custom width x height (450 x 300) | rotate and flip option: keep original | out
 - [ ] PCA approach: tbd
 
 **EfficientNetB7 (@Alex, @Asad)**
-- [ ] Brute force approach: tba
+- [X] Brute force approach: done
+- [ ] PCA approach: tbd
+
+**DenseNet 201 (@Alex)**
+- [X] Brute force approach: done
 - [ ] PCA approach: tbd
 
 **NO FITTING IMPLEMENTATION FixEfficientNet-L2 **
-
-**DenseNet 201 (@Asad)**
-- [ ] Brute force approach: tba
-- [ ] PCA approach: tbd
 
 ## Possible next steps in the project 
 * compare the results of the networks with ground truth 
