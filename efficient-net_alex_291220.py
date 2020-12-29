@@ -74,6 +74,6 @@ def exporter(df, path_to_new_csv):
 
 #Methodenaufruf
 model = tensorflow.keras.applications.EfficientNetB7(weights='imagenet') 
-names, results = main("/Volumes/SD_Alex/image_full-res_test/")
+names, results = main("/Volumes/SD_Alex/avt_image_db_selection/")
 data_f = write_df(name_list=names, results=results)
-exporter(df=data_f, path_to_new_csv="test-1-effnetB7_images.csv")
+exporter(df=data_f, path_to_new_csv="results_29-12_effnetB7.csv")

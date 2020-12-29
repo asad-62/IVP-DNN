@@ -62,15 +62,16 @@ def write_df (name_list, results):
         pre_5_nas.append(results[i][0][4][0])
         pre_5_name.append(results[i][0][4][1])
         pre_5_prob.append(results[i][0][4][2])     
-    df = pd.DataFrame({"Filename": name_list, "Result#1_NAS": pre_1_nas, "Result#1_Name": pre_1_name, "Result#1_Probability":pre_1_prob, "Result#2_NAS": pre_2_nas, "Result#2_Name": pre_2_name, "Result#2_Probability":pre_2_prob, "Result#3_NAS": pre_3_nas, "Result#3_Name": pre_3_name, "Result#3_Probability":pre_3_prob, "Result#4_NAS": pre_4_nas, "Result#4_Name": pre_4_name, "Result#4_Probability":pre_4_prob, "Result#5_NAS": pre_5_nas, "Result#5_Name": pre_5_name, "Result#5_Probability":pre_5_prob})
+    df = pd.DataFrame({"Filename": name_list, "Result#1_n": pre_1_nas, "Result#1_Name": pre_1_name, "Result#1_Probability":pre_1_prob, "Result#2_n": pre_2_nas, "Result#2_Name": pre_2_name, "Result#2_Probability":pre_2_prob, "Result#3_n": pre_3_nas, "Result#3_Name": pre_3_name, "Result#3_Probability":pre_3_prob, "Result#4_n": pre_4_nas, "Result#4_Name": pre_4_name, "Result#4_Probability":pre_4_prob, "Result#5_n": pre_5_nas, "Result#5_Name": pre_5_name, "Result#5_Probability":pre_5_prob})
     return df
 
 #exports the DataFrame as a csv-file
 def exporter(df, path_to_new_csv):
     df.to_csv(path_or_buf = path_to_new_csv)
 
+
 #Methodenaufruf
 model = tensorflow.keras.applications.NASNetLarge(weights='imagenet') 
-names, results = main("/Volumes/SD_Alex/image_full-res_test/")
+names, results = main("/Volumes/SD_Alex/avt_image_db_selection/")
 data_f = write_df(name_list=names, results=results)
-exporter(df=data_f, path_to_new_csv="heutiger-fast-test.csv")
+exporter(df=data_f, path_to_new_csv="results_29-12_nasnet-large.csv")
