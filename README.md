@@ -22,10 +22,10 @@ Many image classificaton algorithms, both classical and machine-learning-based, 
 ## Current project status:
 ### Selection of Approaches
 Selected three CNN-Approaches for image classification based on state-of-the-art benchmarks for CNNs trained on ImageNet database (TOP 1 and TOP 5 accuracy | different amount of training pictures)
-  * [x] NASNetLarge https://arxiv.org/abs/1707.07012
-  * [] EfficientNetB7 https://arxiv.org/abs/1905.11946
-  * [] FixEfficientNet-L2 https://github.com/facebookresearch/FixRes
-  * [] DenseNet201 https://arxiv.org/abs/1608.06993  
+  * NASNetLarge https://arxiv.org/abs/1707.07012
+  * EfficientNetB7 https://arxiv.org/abs/1905.11946
+  * (No fitting Implementation) FixEfficientNet-L2 https://github.com/facebookresearch/FixRes
+  * **DenseNet201 https://arxiv.org/abs/1608.06993**  
 * Further reading:
   * https://paperswithcode.com/task/image-classification
   * https://towardsdatascience.com/state-of-the-art-image-classification-algorithm-fixefficientnet-l2-98b93deeb04c 
@@ -58,11 +58,9 @@ custom width x height (450 x 300) | rotate and flip option: keep original | out
 - [ ] Brute force approach: tba
 - [ ] PCA approach: tbd
 
-**NO IMPLEMENTATION FixEfficientNet-L2 (@Asad)**
-- [ ] Brute force approach: tba
-- [ ] PCA approach: tbd
+**NO FITTING IMPLEMENTATION FixEfficientNet-L2 **
 
-**DenseNet 201 (@tba)**
+**DenseNet 201 (@Asad)**
 - [ ] Brute force approach: tba
 - [ ] PCA approach: tbd
 
