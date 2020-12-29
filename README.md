@@ -24,7 +24,7 @@ Many image classificaton algorithms, both classical and machine-learning-based, 
 Selected three CNN-Approaches for image classification based on state-of-the-art benchmarks for CNNs trained on ImageNet database (TOP 1 and TOP 5 accuracy | different amount of training pictures)
   * NASNetLarge https://arxiv.org/abs/1707.07012
   * EfficientNetB7 https://arxiv.org/abs/1905.11946
-  * (No fitting Implementation) FixEfficientNet-L2 https://github.com/facebookresearch/FixRes
+  * (No fitting implementation) FixEfficientNet-L2 https://github.com/facebookresearch/FixRes
   * **DenseNet201 https://arxiv.org/abs/1608.06993**  
 * Further reading:
   * https://paperswithcode.com/task/image-classification
