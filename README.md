@@ -41,7 +41,8 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
 
 |     Image    | Current accepted results (based on gt)                | TOP-5 results from NASNetLarge                                                             |
 |:------------:|-------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 0AKZCRZA.png <br> ![]https://cloud.tu-ilmenau.de/s/CmtgRNQdi3xCYCY | train, Train, industry, railway, Railway, sky, sunset | 'freight_car', 'electric_locomotive', 'passenger_car', 'trailer_truck', 'steam_locomotive' |
+| 0AKZCRZA.png <br> ![](https://drive.google.com/uc?export=view&id=14J8Lir-uKsqtujJF7GbJHduqPBLA_2dU)| train, Train, industry, railway, Railway, sky, sunset | 'freight_car', 'electric_locomotive', 'passenger_car', 'trailer_truck', 'steam_locomotive' |
+
 
 **Conclusion:** we need an other objective approach (ground truth) in order to decide if an image was classified correctly or not
 
