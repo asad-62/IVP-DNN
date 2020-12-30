@@ -36,8 +36,8 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
 * Selected one lable for each picture for a TOP 1 Accuracy calculation ('picture_one-label.csv' in the git)
 
 #### Current problem (30.12.2020): Discuss in meeting on 04.01.2021
-(tbd): If we compare our ground truth with the classification results of the three algorithms, the meaning of the gt and tbe classification labels often match, but the wording is not identically**
- * If we would automate the checkup based on the current gt labels, there would not be a high amount of correct classifications due to the differt wording 
+(tbd): If we compare our ground truth with the classification results of the three algorithms the meaning of the gt labels and the classification labels often match, but the wording is not identically**
+ * If we would automate the checkup based on the current gt labels, there would be a very small amount of correct classifications due to the differt wordings 
  * But: if you take a glace at the image and the according classification results, you would eventually count it as a right classification result
  
 #### Example 
@@ -48,11 +48,10 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
 
 
 #### Conclusion:
-we need an other objective approach (ground truth) in order to decide if an image was classified correctly or not
+We need an other objective approach (ground truth) in order to decide if an image was classified correctly or not
 
-**Idea to tackle the problem:**
-Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as best fitting. This ground thruth would be compareable, since all networks have the same chance for hitting the assinged ground truth label.
-<br> Also a scripted comparision of the results and our ground truth woulb be possible with this approach.
+Idea to tackle the problem:
+Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as the best fitting. This ground thruth would be compareable, since all networks have the same possibility for hitting the assinged ground truth label. Also a scripted comparision woulb be possible with this approach.
  
 ### Working with high resolution images 
 
@@ -60,7 +59,7 @@ Our three selected cnns were all trained on the ImageNet database, which leads t
 https://cloud.tu-ilmenau.de/s/AKo8jqwEXLFs7Q3 </br>
 Used the Image Resizer application with following options: </br>
 custom width x height (450 x 300) | rotate and flip option: keep original | output setting **Retain the original format**~~<br>
-FIXED: This isn't the case anymore - all results from 29.12.2020 are based on the full resolution images
+FIXED: This isn't the case anymore - all results from on the 29.12.2020 are based on the full resolution images
 
 </br> **Identified possible approaches for working with high resolution images** 
 * **Brute force approach**: Resizing to required dimension (Open CV | cv2.resize) within the preprocessing for the specific cnn-approach
@@ -92,7 +91,7 @@ FIXED: This isn't the case anymore - all results from 29.12.2020 are based on th
  
 * (tbd) compare the influence of the pre-processing resizing vs. PCA
 
-* write the paper until 16.01.2021 for getting feedback before the final hand-in (@Kenneth is already working on the paper)
+* finish the paper until 16.01.2021 for getting feedback before the final hand-in (@Kenneth is already working on the paper)
  
 * ~~(tbd) Run the pre-processing with open cv or PCA on the full resolution images (difficult due to processing power)~~<br>
 This isn't the case anymore: all results from 29.12.2020 are based on the full resolution images
