@@ -35,18 +35,22 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
 * Did a ground truth on the 200 pictures https://cloud.tu-ilmenau.de/s/9ffWqt7G9oLziAk with up to 20 possilbe labels per image ('picture_all-labels.csv' in the git)
 * Selected one lable for each picture for a TOP 1 Accuracy calculation ('picture_one-label.csv' in the git)
 
-**(tbd): If we compare our ground truth with the classification results of the three algorithms, the meaning of the gt and tbe classification labels often match, but the wording is not identically**
+#### Current problem (30.12.2020): Discuss in meeting on 04.01.2021
+(tbd): If we compare our ground truth with the classification results of the three algorithms, the meaning of the gt and tbe classification labels often match, but the wording is not identically**
  * If we would automate the checkup based on the current gt labels, there would not be a high amount of correct classifications due to the differt wording 
- * But: if you take a glace at the image and the according classification results, you would eventually count it as a right classification result 
+ * But: if you take a glace at the image and the according classification results, you would eventually count it as a right classification result
+ 
+#### Example 
 
 |     Image    | Current accepted results (based on gt)                | TOP-5 results from NASNetLarge                                                             |
 |:------------:|-------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | 0AKZCRZA.png <br> ![](https://drive.google.com/uc?export=view&id=14J8Lir-uKsqtujJF7GbJHduqPBLA_2dU)| train, Train, industry, railway, Railway, sky, sunset | 'freight_car', 'electric_locomotive', 'passenger_car', 'trailer_truck', 'steam_locomotive' |
 
 
-**Conclusion:** we need an other objective approach (ground truth) in order to decide if an image was classified correctly or not
+#### Conclusion:
+we need an other objective approach (ground truth) in order to decide if an image was classified correctly or not
 
-Idea to tackle the problem:
+**Idea to tackle the problem:**
 Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as best fitting. This ground thruth would be compareable, since all network have the same chance for hitting the assinged ground truth label.
 <br> Also a scripted comparision of the results and our ground truth woulb be possible with this approach.
  
