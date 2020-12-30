@@ -51,7 +51,7 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
 we need an other objective approach (ground truth) in order to decide if an image was classified correctly or not
 
 **Idea to tackle the problem:**
-Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as best fitting. This ground thruth would be compareable, since all network have the same chance for hitting the assinged ground truth label.
+Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as best fitting. This ground thruth would be compareable, since all networks have the same chance for hitting the assinged ground truth label.
 <br> Also a scripted comparision of the results and our ground truth woulb be possible with this approach.
  
 ### Working with high resolution images 
