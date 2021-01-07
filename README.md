@@ -38,6 +38,7 @@ Selected three CNN-Approaches for image classification based on state-of-the-art
  * If we would automate the checkup based on the current gt labels, there would be a very small amount of correct classifications due to the differt wordings
  * But: if you take a glace at the image and the according classification results, you would eventually count it as a right classification result
 
+
 #### Example
 
 |     Image    | Current accepted results (based on gt)                | TOP-5 results from NASNetLarge                                                             |
@@ -50,6 +51,16 @@ We need an other objective approach (ground truth) in order to decide if an imag
 
 Idea to tackle the problem:
 Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as the best fitting. This ground thruth would be compareable, since all networks have the same possibility for hitting the assinged ground truth label. Also a scripted comparision woulb be possible with this approach.
+
+#### Commitment 
+A manual accuracy checkup: TOP 5 and TOP 1 ACC
+Compare the classification results with the input picture and decide if they match:
+
+https://docs.google.com/spreadsheets/d/1WVZ-QP9rGHllbYnH2YPP3CVSAkEy-JzuhDIM4Vh4yJM/edit?usp=sharing 
+*Add a 1 if statement true, 0 if false 
+The most likely classification is acceptable for the picture -> both get a 1
+At least one of all classification results is acceptable -> TOP 5 gets a 1, TOP 1 gets a 0
+Obviously if they are not matching at all, both get a 0*
 
 ### Working with high resolution images
 
