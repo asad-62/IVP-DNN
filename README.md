@@ -57,9 +57,9 @@ A manual accuracy checkup: TOP 5 and TOP 1 ACC
 Compare the classification results with the input picture and decide if they match:
 
 https://docs.google.com/spreadsheets/d/1WVZ-QP9rGHllbYnH2YPP3CVSAkEy-JzuhDIM4Vh4yJM/edit?usp=sharing 
-*Add a 1 if statement true, 0 if false 
-The most likely classification is acceptable for the picture -> both get a 1
-At least one of all classification results is acceptable -> TOP 5 gets a 1, TOP 1 gets a 0
+<br>*Add a 1 if statement true, 0 if false 
+<br>The most likely classification is acceptable for the picture -> both get a 1<br>
+At least one of all classification results is acceptable -> TOP 5 gets a 1, TOP 1 gets a 0<br>
 Obviously if they are not matching at all, both get a 0*
 
 ### Working with high resolution images
