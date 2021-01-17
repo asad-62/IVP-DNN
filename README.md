@@ -52,7 +52,10 @@ We need an other objective approach (ground truth) in order to decide if an imag
 Idea to tackle the problem:
 Our three selected cnns were all trained on the ImageNet database, which leads to the same 1000 possible outputs/classification results. We use this fact by doing a second ground truth, for which we assign a small amount (1 to 5) of the possible labels (out of the 1000) for each image, that we consider as the best fitting. This ground thruth would be compareable, since all networks have the same possibility for hitting the assinged ground truth label. Also a scripted comparision woulb be possible with this approach.
 
-#### Commitment 
+#### Commitment
+**DONE<br>
+https://github.com/asad-62/IVP-DNN/blob/main/classification-results-all.csv** 
+
 A manual accuracy checkup: TOP 5 and TOP 1 ACC
 Compare the classification results with the input picture and decide if they match:
 
@@ -61,6 +64,10 @@ https://docs.google.com/spreadsheets/d/1WVZ-QP9rGHllbYnH2YPP3CVSAkEy-JzuhDIM4Vh4
 <br>The most likely classification is acceptable for the picture -> both get a 1<br>
 At least one of all classification results is acceptable -> TOP 5 gets a 1, TOP 1 gets a 0<br>
 Obviously if they are not matching at all, both get a 0*
+
+#### Analyze the results
+We had a look at the picture dataset again and decided for each picture if it would be considered as "easy to classify" by us. We decided this subjectively based on the simplicity of the scene (only one human, an animal, or an object in the picture). <br>
+We took all pictures that at least 4 group members considered as easy for the network and did a new ACC calculation with the following outcome: https://github.com/asad-62/IVP-DNN/blob/main/easy-to-classify.csv
 
 ### Working with high resolution images
 
@@ -80,19 +87,19 @@ FIXED: This isn't the case anymore - all results from the 29.12.2020 are based o
 - [x] Brute force approach: finished (@Alex) 
   * Code https://github.com/asad-62/IVP-DNN/blob/main/full-res-nas-net_alex_291220.py 
   * Results https://github.com/asad-62/IVP-DNN/blob/main/results_29-12_nasnet-large.csv 
-- [ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)
+- ~~[ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)~~
 
 **EfficientNetB7**
 - [X] Brute force approach: finished (@Alex)
   * Code https://github.com/asad-62/IVP-DNN/blob/main/efficient-net_alex_291220.py 
   * Results https://github.com/asad-62/IVP-DNN/blob/main/results_29-12_effnetB7.csv
-- [ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)
+- ~~[ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)~~
 
 **DenseNet 201**
 - [X] Brute force approach: finished (@Alex)
   * Code https://github.com/asad-62/IVP-DNN/blob/main/dense-net_alex_291220.py 
   * Results https://github.com/asad-62/IVP-DNN/blob/main/results_29-12_densenet.csv 
-- [ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)
+- ~~[ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)~~
 
 
 ## Possible next steps in the project
