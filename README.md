@@ -117,7 +117,7 @@ FIXED: This isn't the case anymore - all results from the 29.12.2020 are based o
 - ~~[ ] PCA approach: doing until 03.01.2021 (@Asad, @Abhinav, @Muhammad)~~
 
 
-## Possible next steps in the project
+## Possible next steps
 * evaluate the cnns on another database
 * find approaches which will perform better on portraits
 * discuss the influence of object detection vs. image classification
@@ -125,8 +125,3 @@ FIXED: This isn't the case anymore - all results from the 29.12.2020 are based o
 * Transfer learning with the EfficientNet and a specific learning of portraits
 
 * compare the influence of the pre-processing resizing vs. PCA
-
-* finish the paper until 16.01.2021 for getting feedback before the final hand-in (@Kenneth is already working on the paper)
-
-* ~~(tbd) Run the pre-processing with open cv or PCA on the full resolution images (difficult due to processing power)~~<br>
-This isn't the case anymore: all results from 29.12.2020 are based on the full resolution images
