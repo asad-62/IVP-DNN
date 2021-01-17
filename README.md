@@ -67,7 +67,13 @@ Obviously if they are not matching at all, both get a 0*
 
 #### Analyze the results
 We had a look at the picture dataset again and decided for each picture if it would be considered as "easy to classify" by us. We decided this subjectively based on the simplicity of the scene (only one human, an animal, or an object in the picture). <br>
-We took all pictures that at least 4 group members considered as easy for the network and did a new ACC calculation with the following outcome: https://github.com/asad-62/IVP-DNN/blob/main/easy-to-classify.csv
+We took all pictures that at least 4 group members considered as easy for the network and did a new ACC calculation with the following outcome: 
+
+| Top 1 Accuracy | Top 5 Accuracy |
+|:--------------:|:--------------:|
+|       ![](https://github.com/asad-62/IVP-DNN/blob/main/top1-acc.png)       |       ![](https://github.com/asad-62/IVP-DNN/blob/main/top5-acc.png)       |
+
+*source for general performance on imagenet: https://paperswithcode.com/sota/image-classification-on-imagenet* 
 
 ### Working with high resolution images
 
