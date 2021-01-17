@@ -75,6 +75,15 @@ We took all pictures that at least 4 group members considered as easy for the ne
 
 *source for general performance on imagenet: https://paperswithcode.com/sota/image-classification-on-imagenet* 
 
+Unexpectedly, this has drastically worsened the results. Since 48 of the 200 images are portraits, which were often classified as easy to classify data, it was hypothesized that the networks generally achieve worse accuracy for portraits. To test this, performance was analyzed between the subjectively assigned classes of portraits and non-portraits:
+| Classification by image category |
+|:--------------------------------:|
+| ![](https://github.com/asad-62/IVP-DNN/blob/main/classification_by_image-category.png) |
+
+The graph shows the normalized precentage-values for the two classes for the histogram bins from 0 (meaning no cnn has labled it correctly) up to 6 (meaning all cnns would be correct with their TOP1 prediction).Since all approaches performed equally bad there is no meaning in presenting this specifically for each cnn.
+
+This leads to the conclusion, that all of the three cnns perform badly on portraits, therefore the hypothesis is accepted. 
+
 ### Working with high resolution images
 
 ~~**DUE TO LIMITED PROCESSING POWER: UNTIL NOW ONLY USED IMAGES WITH SHRINKED RESOLUTION** </br>
@@ -109,13 +118,13 @@ FIXED: This isn't the case anymore - all results from the 29.12.2020 are based o
 
 
 ## Possible next steps in the project
-* compare the results of the networks with ground truth (challenges/problems in the ground truth paragraph)
-  * **TOP 5 Acc with all available up to 20 gt-labels (no ranking)**
-  * (tbd) TOP 5 Acc with 1 gt-label (label chosen by hand)
-  * (tbd) TOP 1 Acc with all available up to 20 gt-labels (no ranking)
-  * (tbd) TOP 1 Acc with 1 gt-label (label chosen by hand)
+* evaluate the cnns on another database
+* find approaches which will perform better on portraits
+* discuss the influence of object detection vs. image classification
+* Test the hypothesis: portraits are underrepresented in ImageNet database for training, so if an image includes a relatively big person (compared to the image)) in the foreground, it wouldn't classify the image but switches to some kind of objecbt detection level.
+* Transfer learning with the EfficientNet and a specific learning of portraits
 
-* (tbd) compare the influence of the pre-processing resizing vs. PCA
+* compare the influence of the pre-processing resizing vs. PCA
 
 * finish the paper until 16.01.2021 for getting feedback before the final hand-in (@Kenneth is already working on the paper)
 
