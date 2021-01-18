@@ -76,13 +76,14 @@ We took all pictures that at least 4 group members considered as easy for the ne
 *source for general performance on imagenet: https://paperswithcode.com/sota/image-classification-on-imagenet* 
 
 Unexpectedly, this has drastically worsened the results. Since 48 of the 200 images are portraits, which were often classified as easy to classify data, it was hypothesized that the networks generally achieve worse accuracy for portraits. To test this, performance was analyzed between the subjectively assigned classes of portraits and non-portraits:
+
 | Classification by image category |
 |:--------------------------------:|
 | ![](https://github.com/asad-62/IVP-DNN/blob/main/classification_by_image-category.png) |
 
 The graph shows the normalized precentage-values for the two classes for the histogram bins from 0 (meaning no cnn has labled it correctly) up to 6 (meaning all cnns would be correct with their TOP1 prediction).Since all approaches performed equally bad there is no meaning in presenting this specifically for each cnn.
 
-This leads to the conclusion, that all of the three cnns perform badly on portraits, therefore the hypothesis is accepted. 
+This leads to the conclusion, that all of the three cnns perform espacially badly portraits of our dataset, therefore the hypothesis is accepted. 
 
 ### Working with high resolution images
 
