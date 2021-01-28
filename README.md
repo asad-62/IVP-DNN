@@ -83,7 +83,9 @@ Unexpectedly, this has drastically worsened the results. Since 48 of the 200 ima
 
 The graph shows the normalized precentage-values for the two classes for the histogram bins from 0 (meaning no cnn has labled it correctly) up to 6 (meaning all cnns would be correct with their TOP1 prediction).Since all approaches performed equally bad there is no meaning in presenting this specifically for each cnn.
 
-This leads to the conclusion, that all of the three cnns perform espacially badly portraits of our dataset, therefore the hypothesis is accepted. 
+This leads to the conclusion, that all of the three cnns perform espacially badly portraits of our dataset, therefore the hypothesis is accepted.
+
+Based on the fact that all of the three approaches are trained on the ImageNet dataset we consider that there are not enough pictures and/or fitting labes for portraits in the dataset since all cnns are trained on differnet amounts of pctures but use the same labels/classes. This assumtion could not be veryfied due to the fact that there are over 14 Mio pictures labeld with 20.000 differnet labels. 
 
 ### Working with high resolution images
 
